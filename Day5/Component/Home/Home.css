@@ -1,0 +1,134 @@
+ .maincontainer{
+    width:60%;
+    height:30%;
+    margin-left: 300px;
+    flex-wrap: wrap;
+    .sectiontitle{
+        .sectitle{
+            justify-content: center;
+            margin-right:300px;
+            text-align: center;
+            position:relative;
+            font-size: 50px;
+            width:30px;
+            color:rgb(101, 102, 105);
+            margin:1rem 0;
+            z-index:2;
+            &::after{
+                position: absolute;
+                content:'';
+                background: rgb(170, 87, 170);
+                height:5px;
+                width:100px;
+                right:0;
+                bottom:5px;
+                z-index: -1;
+            } 
+        }
+    }
+    .sectionbody{
+        justify-content: center;
+        gap:1.5rem;
+        .singleDestination{
+            height:100%;
+            width:50rem;
+            display: grid;
+            padding: 1rem;
+            row-gap: 10px;
+            border-radius: 1rem;
+            align-items: center;
+            background: rgb(214, 225, 220);
+            box-shadow:rgb(112, 109, 109);
+            overflow:hidden;
+            &:hover{
+                background: silver;
+                box-shadow: 1 4px 4px rgb(159, 8, 240);
+                transition:.3s ease;
+            }
+            .imagemain{
+                height:300px;
+                width:100%;
+                border-radius: 1rem;
+                overflow: hidden;
+                
+                .submainimg{
+                    height:100%;
+                    width:100%;
+                    object-fit: cover;
+                    transition: 2s ease;
+                }
+                &:hover{
+                    img{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+            .cardmain{
+                padding: 1rem;
+                .desTitle{
+                    color:black;
+                    font-size: 1.25rem;
+                }
+                .continentmain{
+                    gap:.5rem;
+                    .icon{
+                        color: grey;
+                        font-size: 10px;
+                    }
+                    .namemain{
+                        color: black;
+                        font-weight: 400;
+                        font-size: 14px;
+                    }
+                }
+                .feesmain{
+                width:100%;
+                justify-content: space-between;
+                padding: 1rem;
+                margin: 1rem 0;
+                border-top:1.5px solid grey;
+                border-bottom:1.5px solid grey;
+                .grademain{
+                    color:black;
+                    max-width: 100px;
+                    line-height: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    .smallmain{
+                        text-align: center;
+                        color:white;
+                        padding: 1px 10px;
+                        font-size:10px;
+                        border-radius: 1rem;
+                        background: linear-gradient(109.6deg, rgb(25, 170, 209) 11.3%, rgb(21, 65, 249) 69.9%);
+                    }
+                }
+                .pricemain{
+                    font-size: 2rem;
+                    color:black;
+                }
+            }
+            .descmain{
+                font-size: 13.5px;
+                color:grey;
+                font-weight:500;
+            }        
+            .btnmain{
+                color:rgb(240, 238, 241);
+                background: linear-gradient(109.6deg, rgb(25, 170, 209) 11.3%, rgb(21, 65, 249) 69.9%);
+                border-radius: 1rem;
+                justify-content: space-between;
+                gap:.3rem;
+                width:25%;
+                height:2rem;
+                .icon{
+                    align-self: center;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+}

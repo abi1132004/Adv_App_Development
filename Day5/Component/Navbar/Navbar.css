@@ -1,0 +1,102 @@
+.boatnavh{
+    background-color: rgb(5, 38, 67);
+    flex-direction: column;
+    flex-wrap: wrap;
+    height:80vh;
+    width: 40%;
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 2px;
+}
+.hnav3{
+    color: rgb(170, 235, 250);
+}
+.flex{
+    display:flex;
+    align-items: center;
+}
+:root{ 
+    --PrimaryColor: hsl(225, 50%, 48%); 
+    --colorOne: Ihsl (15, 74%, 70%); 
+    --SecondaryColor: hsl(180, 17%, 95%); 
+    --colorTwo: hsl(28, 100%, 82%); 
+    --HoverColor: hsl(225, 56%, 59%);
+    --whiteColor: hsl(0, 0%, 100%); 
+    --blackColor: ☐ hsl(0, 0%, 12%); 
+    --textColor: hsl(240, 1%, 48%); 
+    --borderColor: hsl(0, 0%, 83%); 
+    --whiteColorDeam: hsl(0, 0%, 93%); 
+    --greyBg: hsl(0, 0%, 96%); 
+    --greyText: rgb(145, 145, 145); 
+    --inputColor: hs1(330, 12%, 97%); 
+    --boxShadow: box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px 3px rgba(0, 0, 0, 0.05) 0px 4px 6px 2px; 
+    --transition: .4s ease-in-out;
+}
+/* .section{
+    padding: 4rem 0 2rem;
+}
+.container{
+    padding-left: 1.5rem;
+    cursor:pointer;
+} */
+.navBar{
+    position:fixed;
+    flex-direction:column;
+    width:100%;
+    display:flex;
+    align-items: center;
+    z-index:1000;
+}
+.navBarOne,.navBarTwo{
+    justify-content: space-between;
+    padding: 1rem;
+    display:flex;
+    align-items: center;
+    width:100%;
+}
+.navBarOne{
+    display:flex;
+    align-items: center;
+    background: var(--SecondaryColor);
+    .icon:hover{
+        color:var(--PrimaryColor); 
+    }
+}
+.atb{
+    display:flex;
+    align-items: center;
+    gap:1rem;
+    span{
+        color:var(--blackColor);
+        font-size: 13px;
+        cursor:pointer;
+    &:hover{
+        color:var(--PrimaryColor);
+        font-size: 700;
+    }
+    } 
+}
+.navBarTwo{
+    display:flex;
+    align-items: center;
+    justify-content:space-between ;
+    top:3rem;
+    padding: 1.5rem 1rem;
+    position: fixed;
+    transition: .3s ease-in-out;
+}
+.btnOne{
+    display: block;
+    justify-content: center;
+    margin: auto;
+    margin-top: 1rem;
+}
+.btnTwo{
+    display: none;
+}
+.toggleIcon{
+    .Icon{
+        font-size: 30px;
+        color:var(--PrimaryColor);
+    }
+}

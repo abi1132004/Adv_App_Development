@@ -1,0 +1,142 @@
+.toggle
+{
+  position: relative;
+  /* width: 600px; */
+  height: 60px;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer;
+}
+.toggle.active
+{
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+  cursor: pointer;
+}
+.showcase
+{
+  position: absolute;
+  right: 0;
+  min-height: 100vh;
+  width:1000px;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  transition: 0.5s;
+  z-index: 2;
+}
+.showcase.active
+{
+  right: 300px;
+}
+
+.showcase video
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+.overlay
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #080808a1;
+  mix-blend-mode: overlay;
+}
+.text
+{
+  position: relative;
+  z-index: 10;
+}
+
+.text h2
+{
+  margin-top: -40px;
+  font-size: 50px;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.text h3
+{
+  font-size: 35px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.text p
+{
+  font-size: 1.1em;
+  color: #fff;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+}
+
+.menu
+{
+    margin-left: 1000px;
+  position: absolute;
+  top: 0;
+  right: -100px;
+  width: 3000px;
+  height: 100%;
+  display: flex;
+  background: #68bbe5;
+  background: -webkit-linear-gradient(to right, #64d4a0, #eef8f4);
+  background: linear-gradient(to right, #ce89dd, #68e5df9c);  transition: 1.8s ease-in-out;  justify-content: center;
+  align-items: center;
+}
+
+
+@media (max-width: 991px)
+{
+  .showcase,
+  .showcase header
+  {
+    padding: 40px;
+  }
+  .text h2
+  {
+    font-size: 3em;
+  }
+  .text h3
+  {
+    font-size: 2em;
+  }
+}
+
+.admin
+{
+  width: 60px;
+  height: 60px;
+  background: url(https://cdn-icons-png.flaticon.com/512/7542/7542190.png);
+  background-repeat: no-repeat;
+  background-size: 38px;
+  float:inline-start;
+  margin-right:-20px ;
+
+}
+
+.user{
+    width: 100px;
+    height: 100px;
+    background: url(https://cdn-icons-png.flaticon.com/512/747/747376.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    float:inline-start;
+    margin-right:-70px ;
+}

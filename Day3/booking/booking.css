@@ -1,0 +1,103 @@
+.videoDiv1{
+    opacity:0.5;
+    width:2000vh;
+    height:2000vh;
+}
+
+.ap-bg {
+  background-image: url('https://images.pexels.com/photos/2132008/pexels-photo-2132008.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-size: cover;
+  background-position: center;
+  height: 120vh;
+  display: flex;
+  color: #f2f2f2;
+  justify-content: center;
+  align-items: center;
+}
+
+.ap-fc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    height: 50vh;
+    background-color: rgb(231, 235, 237);
+  }
+  
+  .ap-f {
+    max-width: 500px;
+    background-color: rgb(245, 248, 252);
+    background-size: cover;
+    background-position: center;
+    /* color: #f2f2f2; */
+  }
+  
+  .ap-f fieldset {
+    border-width: 5px;
+    padding: 10px;
+    border-color: #f2f2f2;
+    justify-content: center;
+  }
+  
+  .ap-fn {
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+    /* background-color: #d9d3d3; */
+  }
+  
+  .ap-fn input,
+  .ap-fn select {
+    flex-grow: 1;
+    margin: 5px;
+    padding: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+    color: #000;
+    background-color: #f1f5f856;
+    width: 100%; /* Set width for 100% of the container */
+  }
+  
+  .ap-dob,
+  .ap-gender,
+  .ap-ph,
+  .ap-em {
+    flex-grow: 1;
+    margin: 5px;
+    padding: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+    color: #212020;
+    background-color: #f2ecec56;
+    width: 100%;
+    width: calc(50% - 10px); /* Set width for 50% of the container with some spacing */
+  }
+  
+  .ap-ln,
+  .ap-np,
+  .ap-ad,
+  .ap-edu,
+  .ap-aadhar {
+    margin: 5px;
+    padding: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #eaf1ef56;
+    color: #000;
+  }
+  
+  .ap-su {
+    display: block;
+    margin-left: -1000px;
+    padding: 12px 70px;
+    width: 200px;
+    font-weight:400;
+    font-size: 16px;
+    border-radius: 5px;
+    border-color: #000;
+    background-color: #1579bbcf;
+    color: rgb(12, 11, 11);
+    cursor: pointer;
+    border: 4px solid black;
+  }

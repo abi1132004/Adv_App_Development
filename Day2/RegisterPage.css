@@ -1,0 +1,41 @@
+/* register-form.css */
+.register-form {
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  .register-form h2 {
+    text-align: center;
+  }
+  
+  .register-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .register-form label {
+    margin-bottom: 8px;
+  }
+  
+  .register-form input {
+    padding: 10px;
+    margin-bottom: 16px;
+  }
+  
+  .register-form button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .register-form button:hover {
+    background-color: #45a049;
+  }
+  
+  .register-form p {
+    text-align: center;
+    margin-top: 16px;
+  }
+  
